@@ -6,6 +6,7 @@ import Header from './components/Header';
 
 import styled from 'styled-components';
 import Sidebar from './components/Sidebar';
+import Chat from './components/Chat';
 
 const App = () => {
     return (
@@ -14,11 +15,13 @@ const App = () => {
                 <>
                     <Header />
                     <AppBody>
-    
-                        <Switch>
-                            <Route path="/"> </Route>
-                        </Switch>
                         <Sidebar />
+
+                        <Switch>
+                            <Route path="/">
+                                <Chat />
+                            </Route>
+                        </Switch>
 
                     </AppBody>
                 </>
