@@ -22,7 +22,9 @@ const Header = () => {
             <HeaderSearch>
                 <SearchIcon />
 
-                <input  placeholder = "Search PAPAFAM" />
+                <InputSearch>
+                    <input  placeholder = "Search PAPAFAM" />
+                </InputSearch>
             </HeaderSearch>
 
             <HeaderRight>
@@ -76,16 +78,18 @@ const HeaderSearch = styled.div`
     text-align: center;
     color: gray;
     border: 1px solid gray
+`;
 
+const InputSearch = styled.div`
     > input {
         background-color: transparent;
         border: none;
         text-align: center;
-        min-width: 730vw;
+        /* min-width: ; */
         outline: 0;
         color: white;
     }
-`;
+`
 
 const HeaderRight = styled.div`
     flex: 0.3;
